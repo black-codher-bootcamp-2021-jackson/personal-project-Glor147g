@@ -3,9 +3,9 @@
 import axios from "axios";
 
 const getAllProfiles = async () => {
-  const response = await axios.get(`/api/profile`);
+  const response = await axios.get(`/api/profile`);//the way to fetch the API use AXIOS to do the fetching
 
-  return response.data || [];
+  return response.data || [];//retuning the data OR empty array
 };
 
 // All of the endpoints in this file can be exported below
