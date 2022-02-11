@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from "react";
 import './styles/App.css';
-import MyEpicReading from './components/MyEpicReading';
+import MyEpicReading from './components/MyEpicReading/MyEpicReading';
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches 

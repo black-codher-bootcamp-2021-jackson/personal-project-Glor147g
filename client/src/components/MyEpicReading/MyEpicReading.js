@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/App.css";
+import "./MyEpicReading.css"
 
 const MyEpicReading = () => {
   return (
@@ -9,7 +9,7 @@ const MyEpicReading = () => {
         <li>Practice </li>
         <li>About </li>
         <li>Login </li>
-		
+
       </ul>
     </div>
   );
