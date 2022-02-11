@@ -1,22 +1,18 @@
-import React from 'react';
-import '.Styles/App.css';
+import React from "react";
+import "./styles/App.css";
 
-const myEpicReading =()=> {
-return (
-	<div className='title'>
-	<h2> Welcome to My Epic Reading! </h2>
-	<ul className='PracticeAboutLogin'>
+const MyEpicReading = () => {
+  return (
+    <div className="title">
+      <h2> Welcome to My Epic Reading! </h2>
+      <ul className="PracticeAboutLogin">
+        <li>Practice </li>
+        <li>About </li>
+        <li>Login </li>
+		
+      </ul>
+    </div>
+  );
+};
 
-		<li>Practice </li>
-		<li>About </li>
-		<li>Login </li>
-	</ul>
-	</div>
-
-
-)
-
-}
-
-
-export default myEpicReading;
+export default MyEpicReading;

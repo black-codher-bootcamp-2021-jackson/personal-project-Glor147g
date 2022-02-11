@@ -1,7 +1,7 @@
 {
   "name": "black-codher-personal-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "🎉 **Welcome to your Black Codher Personal Project** 🎉",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "dev-install": "npm install && cd client && npm install && cd .."
   },
   "keywords": [],
-  "author": "",
+  "author": "gloria Lilley",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -22,6 +22,14 @@
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
-    "nodemon": "^2.0.6"
-  }
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/black-codher-bootcamp-2021-jackson/personal-project-Glor147g.git"
+  },
+  "bugs": {
+    "url": "https://github.com/black-codher-bootcamp-2021-jackson/personal-project-Glor147g/issues"
+  },
+  "homepage": "https://github.com/black-codher-bootcamp-2021-jackson/personal-project-Glor147g#readme"
 }
