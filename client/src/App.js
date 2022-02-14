@@ -1,22 +1,42 @@
 // import React, { useState, useEffect } from "react";
 import './styles/App.css';
 import MyEpicReading from './components/MyEpicReading/MyEpicReading';
+import { BrowserRouter as Router} from 'react-router-dom';
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches 
 
 
-function App(){
-return (
-  <div>
-<MyEpicReading />
+const App = () => {
+  return (
+    <div>
+      <Router>
+  <MyEpicReading />
+  </Router>
+      </div>
+  
+  );
+  };
 
-    </div>
-
-);
 
 
-};
+
+
+
+
+
+
+// function App(){
+// return (
+//   <div>
+// <MyEpicReading />
+
+//     </div>
+
+// );
+
+
+// };
 
 // function App() {
 //   const [profiles, setProfiles] = useState(null);//we arent sure what data we'll get
