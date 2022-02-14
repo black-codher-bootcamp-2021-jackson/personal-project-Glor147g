@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from "react";
 import './styles/App.css';
 import MyEpicReading from './components/MyEpicReading/MyEpicReading';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches 
@@ -9,12 +9,23 @@ import { BrowserRouter as Router} from 'react-router-dom';
 
 const App = () => {
   return (
+    <>
+   <BrowserRouter>
     <div>
-      <Router>
+      <Routes>
+      <Route>
+        <Route exact path="/" element ={
+        <>
   <MyEpicReading />
-  </Router>
+  </>
+        }
+        />
+
+  </Route>
+  </Routes>;
       </div>
-  
+      </BrowserRouter>
+      </>
   );
   };
 
