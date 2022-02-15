@@ -7,7 +7,8 @@ const MyEpicReading = () => {
       <h2> Welcome to My Epic Reading! </h2>
       <ul className="PracticeAboutLogin">
 
-        <li>Add A reader</li>
+        <button on > Add A reader</button>
+        <Link to="/search"></Link>
         <li>Practice </li>
         <li>About </li>
         <li>Login </li>

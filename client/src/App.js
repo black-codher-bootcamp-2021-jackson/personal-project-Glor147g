@@ -1,7 +1,9 @@
 // import React, { useState, useEffect } from "react";
 import './styles/App.css';
 import MyEpicReading from './components/MyEpicReading/MyEpicReading';
+import UserInfo from './components/UserInfo/UserInfo';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches 
@@ -21,13 +23,24 @@ const App = () => {
         }
         />
 
+        <Route 
+        exact path ="/EnterBookInfo" 
+        element ={
+          <>
+          <EnterBookInfo />
+          </>
+        }
+        />
+
+
   </Route>
-  </Routes>;
+  </Routes>
+
       </div>
       </BrowserRouter>
       </>
   );
-  };
+  }
 
 
 
