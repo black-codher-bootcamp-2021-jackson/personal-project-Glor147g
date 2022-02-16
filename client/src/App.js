@@ -1,7 +1,6 @@
 // import React, { useState, useEffect } from "react";
-import './styles/App.css';
 import MyEpicReading from './components/MyEpicReading/MyEpicReading';
-import UserInfo from './components/UserInfo/UserInfo';
+import EnterBookInfo from './components/EnterBookInfo/EnterBookInfo';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
