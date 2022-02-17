@@ -13,8 +13,15 @@ const EnterBookInfo = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const book = { title, author, page, comment, length };
+    // console.log(book);
 
-    console.log(book);
+    fetch("http://localhost:3000/EnterBookInfo?", {
+      method: "POST",
+      headers: { "content-Type": "application/json" },
+      body: JSON.stringify(book),
+    }).then(() => {
+      console.log("new book added");
+    });
   };
 
   return (
