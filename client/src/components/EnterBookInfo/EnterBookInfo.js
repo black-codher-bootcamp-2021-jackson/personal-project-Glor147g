@@ -2,16 +2,25 @@ import React from "react";
 import "./EnterBookInfo.css";
 import { useState } from "react";
 
+//created state for each field
 const EnterBookInfo = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [page, setPage] = useState("");
-  const [length, setLength] = useState("");
+  const [comment, setComment] = useState("");
+  const [length, setLength] = useState("5");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const book = { title, author, page, comment, length };
+
+    console.log(book);
+  };
 
   return (
     <div className="create">
       <h2> Enter Book Information </h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label> Book Name: </label>
         <input
           type="text"
@@ -29,22 +38,25 @@ const EnterBookInfo = () => {
           // //TWO WAY-BINDING the above allows me to update what is typed
         />
         <label> Page(s): </label>
-        <input 
-        type="text" 
-        required 
-        value={page}
-        onChange={(e) => setPage(e.target.value)} />
+        <input
+          type="text"
+          required
+          value={page}
+          onChange={(e) => setPage(e.target.value)}
+        />
 
         <label> Comment(s): </label>
-        <textarea required></textarea>
+        <textarea
+          required
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+        ></textarea>
 
         <label> Length </label>
-        <select>
+        <select value={length} onChange={(e) => setLength(e.target.value)}>
           <option value="5"> 5 mins </option>
           <option value="10"> 10 mins </option>
           <option value="15"> 15 mins </option>
-          value={length}
-          onChange={(e) => setLength(e.target.value)}
         </select>
 
         <br />
@@ -52,6 +64,8 @@ const EnterBookInfo = () => {
         <p>{title}</p>
         <p>{author}</p>
         <p>{page}</p>
+        <p>{comment}</p>
+        <p>{length}</p>
       </form>
     </div>
   );
