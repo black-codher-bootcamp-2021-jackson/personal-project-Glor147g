@@ -1,0 +1,19 @@
+
+
+.PreviewBookList{
+padding:10ox 16px;
+margin:20px 0;
+border-bottom:1px solid whitesmoke;
+}
+
+.PreviewBookList:hover{
+box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+		
+.PreviewBookList h2{
+	font:30px;
+	color:#f13;
+	margin-bottom:8px;
+
+
+}

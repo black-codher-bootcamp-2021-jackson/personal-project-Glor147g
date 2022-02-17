@@ -1,62 +1,55 @@
 // import React, { useState, useEffect } from "react";
-import MyEpicReading from './components/MyEpicReading/MyEpicReading';
-import EnterBookInfo from './components/EnterBookInfo/EnterBookInfo';
+import MyEpicReading from "./components/MyEpicReading/MyEpicReading";
+import EnterBookInfo from "./components/EnterBookInfo/EnterBookInfo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 
 // SERVICES THAT CALL OUR API ENDPOINTS
-// import { getAllProfiles } from "./services/profileService";//we create all our fetches 
-
+// import { getAllProfiles } from "./services/profileService";//we create all our fetches
 
 const App = () => {
   return (
     <>
-   <BrowserRouter>
-    <div>
-      <Routes>
-      <Route>
-        <Route exact path="/" element ={
-        <>
-  <MyEpicReading />
-  </>
-        }
-        />
+      <BrowserRouter>
+        <div>
+          <Routes>
+            <Route>
+              <Route
+                exact
+                path="/"
+                element={
+                  <>
+                    <MyEpicReading />
+                  </>
+                }
+              />
 
-        <Route 
-        exact path ="/EnterBookInfo" 
-        element ={
-          <>
-          <EnterBookInfo />
-          </>
-        }
-        />
+              <Route
+                exact
+                path="/EnterBookInfo"
+                element={
+                  <>
+                    <EnterBookInfo />
+                  </>
+                }
+              />
 
-        <Route 
-        exact path ="/DisplayBookLog" 
-        element ={
-          <>
-          <EnterBookInfo />
-          </>
-        }
-        />
-
-
-  </Route>
-  </Routes>
-
-      </div>
+              <Route
+                exact
+                path="/DisplayBookLog"
+                element={
+                  <>
+                    <DisplayBookLog />
+                  </>
+                }
+              />
+            </Route>
+          </Routes>
+        </div>
       </BrowserRouter>
-      </>
+    </>
   );
-  }
-
-
-
-
-
-
-
-
+};
 
 // function App(){
 // return (
@@ -67,12 +60,11 @@ const App = () => {
 
 // );
 
-
 // };
 
 // function App() {
 //   const [profiles, setProfiles] = useState(null);//we arent sure what data we'll get
-//   // 
+//   //
 
 //   useEffect(() => {//inbuit funtion that creates state change based on what we design eg new data
 //     async function getProfiles() {
@@ -80,7 +72,7 @@ const App = () => {
 //         const response = await getAllProfiles();
 //         setProfiles(response);
 //       }
-  
+
 //     }
 
 //     getProfiles();
@@ -91,7 +83,7 @@ const App = () => {
 //     return (
 //       <li key={user._id}>
 //         <h3>
-//           {`${user.first_name} 
+//           {`${user.first_name}
 //           ${user.last_name}`}
 //         </h3>
 //         <p>{user.location}</p>

@@ -1,9 +1,13 @@
 // import React from "react";
 import {useState} from 'react';
+import './DisplayBookLog.css';
 
 const DisplayBookList = () => {
-const [booklist , setBooklist] = useState ([
-{title: 'GoodnightMoon', Author: 'Margaret Wise', pages: '25' , comment : 'great', id: 1}
+const [books , setBooks] = useState ([
+{title: 'GoodnightMoon', Author: 'Margaret Wise', pages: '25' , comment : 'great', id: 1},
+{title: 'GoodMoon', Author: 'Maise', pages: '25' , comment : 'great', id: 2},
+
+{title: 'Goooon', Author: 'MarWise', pages: '25' , comment : 'great', id: 3}
 ]);
 
 
@@ -11,7 +15,10 @@ const [booklist , setBooklist] = useState ([
 	  <div className = 'DisplayBookList'>
 		{books.map((book) => (
 			<div className = 'PreviewBookList'key={book.id}>
-				<h2>My Book Cabinet </h2>
+				<h2>{book.title} </h2>
+				<p>by{book.Author}</p>
+				<p>pages{book.pages}</p>
+				<p>comment{book.comment}</p>
 
 				</div>
 		))}
