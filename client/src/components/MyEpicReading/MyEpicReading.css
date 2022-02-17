@@ -3,8 +3,12 @@
 	text-align:centre;
 	}
 	
-	.title h2 {
-	  text-align: center;
+	.title {
+		background-color: #FFE162;
+		color: black;
+		padding:40px;
+		font-family: sans-serif;
+		text-align: center;
 	}
 	
 	.PracticeAboutLogin {
