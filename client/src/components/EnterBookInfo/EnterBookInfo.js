@@ -11,14 +11,14 @@ const EnterBookInfo = () => {
     return (
       <div className="create">
       <h2> Enter Book Information </h2>
-      <form>
-        <label> Book Name: </label>
+      <form action ="" >
+        <label> Book Name </label>
           <input 
           type="text"
           required
           value={title} 
-        
           />
+
            <label> Author(s): </label>
           <input 
           type="text"
@@ -31,6 +31,20 @@ const EnterBookInfo = () => {
           required
           value={title} 
         />
+
+        <label> comment(s): </label>
+          <textarea 
+            required 
+            ></textarea> 
+
+            <label> Length </label>
+<select>
+  <option value="5" >  5 mins </option>
+  <option value="10"> 10 mins </option>
+  <option value="15"> 15 mins </option>
+</select>
+
+        <br />
         <button> Add Book </button>
           </form>
           </div>
