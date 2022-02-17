@@ -31,6 +31,15 @@ const App = () => {
         }
         />
 
+        <Route 
+        exact path ="/DisplayBookLog" 
+        element ={
+          <>
+          <EnterBookInfo />
+          </>
+        }
+        />
+
 
   </Route>
   </Routes>

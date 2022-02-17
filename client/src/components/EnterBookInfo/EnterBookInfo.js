@@ -2,6 +2,7 @@ import React from "react";
 import "./EnterBookInfo.css";
 import { useState } from "react";
 
+
 //created state for each field
 const EnterBookInfo = () => {
   const [title, setTitle] = useState("");
@@ -9,15 +10,18 @@ const EnterBookInfo = () => {
   const [page, setPage] = useState("");
   const [comment, setComment] = useState("");
   const [length, setLength] = useState("5");
-  const [isPending, setIsPending] = useState("false");
+  const [isPending, setIsPending] = useState(false);
+ 
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const book = { title, author, page, comment, length };
     // console.log(book);
     setIsPending(true);
+   
 
-    fetch("http://localhost:3000/EnterBookInfo?", {
+    fetch("http://localhost:3000/EnterBookInfo", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(book),
