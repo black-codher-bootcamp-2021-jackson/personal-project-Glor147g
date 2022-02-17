@@ -9,11 +9,13 @@ const EnterBookInfo = () => {
   const [page, setPage] = useState("");
   const [comment, setComment] = useState("");
   const [length, setLength] = useState("5");
+  const [isPending, setIsPending] = useState("false");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const book = { title, author, page, comment, length };
     // console.log(book);
+    setIsPending(true);
 
     fetch("http://localhost:3000/EnterBookInfo?", {
       method: "POST",
@@ -21,6 +23,7 @@ const EnterBookInfo = () => {
       body: JSON.stringify(book),
     }).then(() => {
       console.log("new book added");
+      setIsPending(false);
     });
   };
 
@@ -67,7 +70,8 @@ const EnterBookInfo = () => {
         </select>
 
         <br />
-        <button> Add Book </button>
+        {!isPending && <button> Add Book </button>}
+        {isPending && <button disabled> Adding Book.... </button>}
         <p>{title}</p>
         <p>{author}</p>
         <p>{page}</p>
