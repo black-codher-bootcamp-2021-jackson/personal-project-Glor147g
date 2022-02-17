@@ -19,7 +19,7 @@ const EnterBookInfo = () => {
     const book = { title, author, page, comment, length };
     // console.log(book);
     setIsPending(true);
-   
+    // history.push('/');
 
     fetch("http://localhost:3000/EnterBookInfo", {
       method: "POST",

@@ -4,6 +4,8 @@ import EnterBookInfo from "./components/EnterBookInfo/EnterBookInfo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 
+import Header from "./components/Header/Header";
+
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches
 
@@ -12,6 +14,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <div>
+          <Header />
           <Routes>
             <Route>
               <Route
@@ -29,7 +32,7 @@ const App = () => {
                 path="/EnterBookInfo"
                 element={
                   <>
-                    <EnterBookInfo />
+                    <apiBook />
                   </>
                 }
               />
