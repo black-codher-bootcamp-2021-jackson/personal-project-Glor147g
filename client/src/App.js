@@ -4,7 +4,8 @@ import Form from "./components/EnterBookInfo/Form";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 import NavBar from "./components/NavBar/Navbar";
-import About from ".components/About/About";
+import About from "./components/About/About";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 // import Header from "./components/Header/Header";
 
@@ -40,6 +41,19 @@ const App = () => {
                   </>
                 }
               />
+
+              
+
+<Route
+                exact
+                path="/Testimonials"
+                element={
+                  <>
+                   <Testimonials />
+                  </>
+                }
+              />
+
 
               <Route
                 exact
