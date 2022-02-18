@@ -3,6 +3,7 @@ import MyEpicReading from "./components/MyEpicReading/MyEpicReading";
 import EnterBookInfo from "./components/EnterBookInfo/EnterBookInfo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
+import NavBar from "./components/NavBar/Navbar";
 
 import Header from "./components/Header/Header";
 
@@ -15,6 +16,7 @@ const App = () => {
       <BrowserRouter>
         <div>
           <Header />
+          <NavBar />
           <Routes>
             <Route>
               <Route
@@ -26,13 +28,14 @@ const App = () => {
                   </>
                 }
               />
+              
 
               <Route
                 exact
-                path="/EnterBookInfo"
+                path="/api/book"
                 element={
                   <>
-                    <apiBook />
+                    <EnterBookInfo />
                   </>
                 }
               />

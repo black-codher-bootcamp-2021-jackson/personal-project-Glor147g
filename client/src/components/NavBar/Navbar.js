@@ -1,11 +1,18 @@
-const NavBar = () => {
+import React from "react";
+import "./NavBar.css";
+
+const Navbar = () => {
   return (
-    <div>
-      <h2> My Epic Reader </h2>
-      <h2> Home </h2>
+    <nav className="navbar">
+      <h1> The Epic Reader App</h1>
+      <div className="links">
+        <a href="/">Home</a>
+        <a href="/About">About</a>
+        <a href="/Login">Login </a>
+      </div>
       <h2> About </h2>
-    </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;

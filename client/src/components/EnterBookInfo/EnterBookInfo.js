@@ -21,7 +21,7 @@ const EnterBookInfo = () => {
     setIsPending(true);
     // history.push('/');
 
-    fetch("http://localhost:3000/EnterBookInfo", {
+    fetch("http://localhost:3000/api/book", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(book),
