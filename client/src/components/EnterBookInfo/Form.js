@@ -1,18 +1,15 @@
 import React from "react";
-import "./EnterBookInfo.css";
+import "./Form.css";
 import { useState } from "react";
 
-
 //created state for each field
-const EnterBookInfo = () => {
+const Form = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [page, setPage] = useState("");
   const [comment, setComment] = useState("");
   const [length, setLength] = useState("5");
   const [isPending, setIsPending] = useState(false);
- 
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -86,7 +83,7 @@ const EnterBookInfo = () => {
   );
 };
 
-export default EnterBookInfo;
+export default Form;
 
 // const EnterBookInfo = () => {
 //     const [inputs, setInputs] = useState ({});

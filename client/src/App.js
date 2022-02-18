@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from "react";
 import Home from "./components/MyEpicReading/Home";
-import EnterBookInfo from "./components/EnterBookInfo/EnterBookInfo";
+import Form from "./components/EnterBookInfo/Form";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 import NavBar from "./components/NavBar/Navbar";
@@ -35,11 +35,19 @@ const App = () => {
                 path="/api/book"
                 element={
                   <>
-                    <EnterBookInfo />
+                    < Form />
                   </>
                 }
               />
-
+{/* <Route
+                exact
+                path="/Startreading"
+                element={
+                  <>
+                    <Form />
+                  </>
+                }
+              /> */}
               <Route
                 exact
                 path="/DisplayBookLog"
@@ -49,6 +57,16 @@ const App = () => {
                   </>
                 }
               />
+                {/* <Route
+                exact
+                path="/Amaia-Grace"
+                element={
+                  <>
+                    <Amaia-Grace />
+                  </> */}
+                {/* }
+              /> */}
+
             </Route>
           </Routes>
         </div>
