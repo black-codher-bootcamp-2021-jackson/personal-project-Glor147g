@@ -1,11 +1,11 @@
 // import React, { useState, useEffect } from "react";
-import MyEpicReading from "./components/MyEpicReading/MyEpicReading";
+import Home from "./components/MyEpicReading/Home";
 import EnterBookInfo from "./components/EnterBookInfo/EnterBookInfo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 import NavBar from "./components/NavBar/Navbar";
 
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
 
 // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllProfiles } from "./services/profileService";//we create all our fetches
@@ -15,7 +15,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <div>
-          <Header />
+          {/* <Header /> */}
           <NavBar />
           <Routes>
             <Route>
@@ -24,7 +24,7 @@ const App = () => {
                 path="/"
                 element={
                   <>
-                    <MyEpicReading />
+                   <Home />
                   </>
                 }
               />
@@ -59,6 +59,7 @@ const App = () => {
 
 // function App(){
 // return (
+
 //   <div>
 // <MyEpicReading />
 

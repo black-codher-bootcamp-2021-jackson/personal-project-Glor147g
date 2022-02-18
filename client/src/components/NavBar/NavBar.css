@@ -1,0 +1,18 @@
+.navbar {
+padding: 20px;
+display:flex;
+align-items: center;
+max-width:600px;
+margin:0 auto;
+border-bottom:1px solid white;
+
+}
+
+.navbar h1 {
+color:blue;
+}
+
+.navbar .links {
+margin-left: auto;
+
+}
