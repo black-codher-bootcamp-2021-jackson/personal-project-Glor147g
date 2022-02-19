@@ -64,7 +64,7 @@ const App = () => {
                   </>
                 }
               />
-{/* <Route
+<Route
                 exact
                 path="/Startreading"
                 element={
@@ -72,7 +72,16 @@ const App = () => {
                     <Form />
                   </>
                 }
-              /> */}
+              />
+              <Route
+                exact
+                path="/kai"
+                element={
+                  <>
+                    <DisplayBookLog />
+                  </>
+                }
+              />
               <Route
                 exact
                 path="/DisplayBookLog"
@@ -82,15 +91,15 @@ const App = () => {
                   </>
                 }
               />
-                {/* <Route
+                <Route
                 exact
                 path="/Amaia-Grace"
                 element={
                   <>
-                    <Amaia-Grace />
-                  </> */}
-                {/* }
-              /> */}
+                    <DisplayBookLog />
+                  </>
+                  }
+              />
 
             </Route>
           </Routes>
