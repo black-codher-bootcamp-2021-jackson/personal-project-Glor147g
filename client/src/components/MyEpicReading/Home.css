@@ -1,31 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=The+Nautigal&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=The+Nautigal&display=swap');
+.enterMyFirstName {
+  margin: 2rem;
+  text-align: centre;
+}
 
+.title {
+  background-color: #ffe162;
+  color: black;
+  padding: 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-.enterMyFirstName{
-	margin:2rem;
-	text-align:centre;
-	}
-	
-	.title {
-		background-color: #FFE162;
-		color: black;
-		padding:40px;
-		font-family: sans-serif;
-		text-align: center;
-	}
-	
-	.PracticeAboutLogin {
+/* .PracticeAboutLogin {
 	list-style-type: none;
 	margin: 2rem;
 	padding: 0;
-	}
+	} */
 
-	.create button {
-		background-color: #FF6464;
+/* .create button .S {
+		background-color: blue;
 		color: black;
 		border:0;
 		padding: 8px;
 		border-radius: 8px;
 		cursor: pointer;
 	}
+
+	.create button .A {
+		background-color: red;
+		color: black;
+		border:0;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+	}
+
+	.create button .K {
+		background-color: purple;
+		color: black;
+		border:0;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+	} */
+
+.navbar h1 {
+  color: blue;
+}
+
+.title .links-1 {
+  color: blue;
+  background-color: #A3DA8D;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+.title .links-2 {
+  color: blue;
+  background-color: #f1356d;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+.title .links-3 {
+  color: blue;
+  background-color: #24a19c;
+  border-radius: 8px;
+  margin-left: auto;
+}
