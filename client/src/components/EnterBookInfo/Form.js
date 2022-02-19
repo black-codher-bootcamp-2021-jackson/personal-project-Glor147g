@@ -1,32 +1,63 @@
 import React from "react";
 import "./Form.css";
 import { useState } from "react";
+// import { addBookToList} from "../../services/myEpicReader"
+import {addBookToList} from ""
+
+
 
 //created state for each field
 const Form = () => {
   const [title, setTitle] = useState("");
+  console.log(title);
   const [author, setAuthor] = useState("");
   const [page, setPage] = useState("");
   const [comment, setComment] = useState("");
   const [length, setLength] = useState("5");
   const [isPending, setIsPending] = useState(false);
 
+  //add function to send/ then  data sending the data
+ const addBook = async ()=>{
+   console.log('im inside the add book function')
+   const response = await addBookToList
+  
+   ({ 
+     book: title, 
+     author: author, 
+     pages: page, 
+     comment: comment,
+     length: length 
+    });
+
+  
+  };
+
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const book = { title, author, page, comment, length };
-    // console.log(book);
-    setIsPending(true);
-    // history.push('/');
+    // console.log('etargetvalue', e.target.value);
+    // console.log('e and target', e.target);
+    // console.log('eonly',e);
+  
+    addBook()
 
-    fetch("http://localhost:3000/api/book", {
-      method: "POST",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify(book),
-    }).then(() => {
-      console.log("new book added");
-      setIsPending(false);
-    });
+    // const book = { title, author, page, comment, length };
+    // // console.log(book);
+    // setIsPending(true);
+    // // history.push('/');
+
+    // fetch("http://localhost:3000/api/book", {
+    //   method: "POST",
+    //   headers: { "content-Type": "application/json" },
+    //   body: JSON.stringify(book),
+    // }).then(() => {
+    //   // console.log("new book added");
+    //   setIsPending(false);
+    // });
   };
+  
 
   return (
     <div className="create">

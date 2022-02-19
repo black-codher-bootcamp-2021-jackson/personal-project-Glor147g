@@ -6,7 +6,7 @@ const Home = () => {
     <div className="title">
       <h2> "Connecting families through the joy of reading "! </h2>
       <div className="links-1">
-        <a href="/Start Reading">Start Reading</a>
+        <a href="/Startreading"> Start Reading</a>
       <div className="links-2">
         <a href="/Amaia-Grace">Amaia-Grace</a>
       <div className="links-3">

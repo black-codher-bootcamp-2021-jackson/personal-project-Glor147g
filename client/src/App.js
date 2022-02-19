@@ -6,6 +6,7 @@ import DisplayBookLog from "./components/DisplayBookLog/DisplayBookLog";
 import NavBar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
 import Testimonials from "./components/Testimonials/Testimonials";
+import EnterName from "./components/EnterName/EnterName";
 
 // import Header from "./components/Header/Header";
 
@@ -26,53 +27,51 @@ const App = () => {
                 path="/"
                 element={
                   <>
-                   <Home />
+                    <Home />
                   </>
                 }
               />
-              
 
               <Route
                 exact
                 path="/About"
                 element={
                   <>
-                   <About />
+                    <About />
                   </>
                 }
               />
 
-              
-
-<Route
+              <Route
                 exact
                 path="/Testimonials"
                 element={
                   <>
-                   <Testimonials />
+                    <Testimonials />
                   </>
                 }
               />
-
 
               <Route
                 exact
                 path="/api/book"
                 element={
                   <>
-                    < Form />
-                  </>
-                }
-              />
-<Route
-                exact
-                path="/Startreading"
-                element={
-                  <>
                     <Form />
                   </>
                 }
               />
+
+              <Route
+                exact
+                path="/Startreading"
+                element={
+                  <>
+                    <EnterName />
+                  </>
+                }
+              />
+
               <Route
                 exact
                 path="/kai"
@@ -91,16 +90,15 @@ const App = () => {
                   </>
                 }
               />
-                <Route
+              <Route
                 exact
                 path="/Amaia-Grace"
                 element={
                   <>
                     <DisplayBookLog />
                   </>
-                  }
+                }
               />
-
             </Route>
           </Routes>
         </div>
