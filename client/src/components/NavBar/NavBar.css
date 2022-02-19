@@ -14,7 +14,26 @@ border-bottom:1px solid white;
 color:blue;
 }
 
-.navbar .links {
+.navbar .links-1 {
+color: blue;
+background-color: #FFE162;
+border-radius: 8px;
 margin-left: auto;
 
 }
+
+.navbar .links-2 {
+	color: blue;
+	background-color: #f1356d;
+	border-radius: 8px;
+	margin-left: auto;
+	
+	}
+
+	.navbar .links-3 {
+		color: blue;
+		background-color: #24A19C;
+		border-radius: 8px;
+		margin-left: auto;
+		
+		}
